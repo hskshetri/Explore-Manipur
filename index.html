@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Manipur: The Jewel of India</title>
 
-    <link rel="icon" href="images/Favicon-NavBar.jpg" type="image/jpeg">
+    <link rel="icon" href="images/Favicon-NavBar.jpg" type="image/png">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -549,7 +549,7 @@
             <div class="container mx-auto px-6 text-center" data-aos="fade-up">
                 <h2 class="section-title">A Glimpse into History</h2>
                 <div id="history-grid" class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 text-center items-start">
-                    <!-- Static History Cards will be injected here by JavaScript >
+                    <!-- Static History Cards will be injected here by JavaScript -->
                 </div>
             </div>
         </section>
@@ -585,10 +585,10 @@
          <section id="sports" class="py-16 md:py-20 lg:py-24 bg-slate-100"><div class="container mx-auto px-6 text-center" data-aos="fade-up"><h2 class="section-title">Where Heritage Plays: The Sports of Manipur</h2><div class="carousel-viewport"><div class="carousel-container"><div class="carousel-track"></div></div><button class="carousel-button carousel-button--left" aria-label="Previous sport"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button><button class="carousel-button carousel-button--right" aria-label="Next place"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button></div></div></section>
         
         <!-- Cuisine Section -->
-        <section id="cuisine" class="py-16 md:py-20 lg:py-24 bg-slate-100"><div class="container mx-auto px-6 text-center" data-aos="fade-up"><h2 class="section-title">A Taste of Tradition</h2><div class="carousel-viewport"><div class="carousel-container"><div class="carousel-track"></div></div><button class="carousel-button carousel-button--left" aria-label="Previous cuisine"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button><button class="carousel-button carousel-button--right" aria-label="Next cuisine"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button></div></div></section>
+        <section id="cuisine" class="py-16 md:py-20 lg:py-24"><div class="container mx-auto px-6 text-center" data-aos="fade-up"><h2 class="section-title">A Taste of Tradition</h2><div class="carousel-viewport"><div class="carousel-container"><div class="carousel-track"></div></div><button class="carousel-button carousel-button--left" aria-label="Previous cuisine"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button><button class="carousel-button carousel-button--right" aria-label="Next cuisine"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button></div></div></section>
         
         <!-- Ingredients Section -->
-        <section id="ingredients" class="py-16 md:py-20 lg:py-24"><div class="container mx-auto px-6 text-center" data-aos="fade-up"><h2 class="section-title">Manipur's Pantry</h2><div class="carousel-viewport"><div class="carousel-container"><div class="carousel-track"></div></div><button class="carousel-button carousel-button--left" aria-label="Previous ingredient"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button><button class="carousel-button carousel-button--right" aria-label="Next ingredient"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button></div></div></section>
+        <section id="ingredients" class="py-16 md:py-20 lg:py-24 bg-slate-100"><div class="container mx-auto px-6 text-center" data-aos="fade-up"><h2 class="section-title">Manipur's Pantry</h2><div class="carousel-viewport"><div class="carousel-container"><div class="carousel-track"></div></div><button class="carousel-button carousel-button--left" aria-label="Previous ingredient"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg></button><button class="carousel-button carousel-button--right" aria-label="Next ingredient"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></button></div></div></section>
     </main>
 
     <!-- Footer -->
@@ -640,12 +640,28 @@
             handleNavScroll();
             window.addEventListener('scroll', handleNavScroll);
 
+            // --- Smooth Scrolling for Nav Links ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId.length > 1) {
+                        e.preventDefault(); // Prevent the default jump
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
             // --- Hero Section Carousel ---
             const heroSection = document.getElementById('hero-section');
             const heroOverlay = heroSection.querySelector('.hero-overlay');
             const watermarkElement = document.getElementById('hero-watermark');
             const heroData = [
-                { src: 'images/Landscape.jpg', label: 'Lush Green Hills' },
+               { src: 'images/Landscape.jpg', label: 'Lush Green Hills' },
                 { src: 'images/Kangla Fort.jpg', label: 'Kangla Fort, Imphal' },
                 { src: 'images/LoktakLake.jpg', label: 'Loktak Lake' },
                 { src: 'images/ShiroiLily.jpg', label: 'Shirui Lily in Bloom' },
@@ -708,10 +724,9 @@
             const heroObserver = new IntersectionObserver(observerCallback, observerOptions);
             heroObserver.observe(heroSection);
 
-
-            // --- DATA for Card Sections ---
+            // Using placeholder images for demonstration
             const siteData = {
-                history: [
+               history: [
                     { imgs: ['images/Kangla.jpg', 'images/Kangla2.jpg', 'images/Kangla3.jpg'], title: 'The Kingdom of Kangleipak', desc: "Believed to date back to 33 AD, the Kingdom of Kangleipak—present-day Manipur—emerged under the reign of King Nongda Lairen Pakhangba, a figure who occupies both the historical record and the realm of legend. According to Meitei folklore, Pakhangba was not just a mortal ruler but a divine incarnation of a serpent-dragon deity, entrusted with uniting the valley and its people under cosmic order. For nearly two millennia, Kangleipak thrived as a sovereign kingdom, developing its own script (Meitei Mayek), refined political systems, and a rich spiritual tradition centered on Sanamahism, the indigenous faith.<br><br>Around the early 18th century, during the reign of King Pamheiba (also known as Garib Niwaz), Hinduism was introduced and later institutionalized as the state religion. Pamheiba was heavily influenced by Hindu missionaries and Brahmin priests who sought to spread Vaishnavism in the region. In 1729, under the king’s orders and with the active involvement of the royal priest Shantidas Gosai and other orthodox Brahmin scholars, the sacred Meitei scriptures known as the Puyas were publicly burned in a dramatic event called the Puya Mei Thaba (Burning of the Puyas). This act was intended to suppress the indigenous Sanamahism and enforce Hindu religious and cultural norms.<br><br>Despite this devastating loss, many oral traditions, rituals, and aspects of the old faith survived, blending syncretically with Hindu practices. The oral epics Cheitharol Kumbaba and Moirang Kangleirol recount tales of heroic exploits, love stories, and supernatural interventions—such as the warrior-hero Khamba and the princess Thoibi, whose romance is immortalized in ritual dance and song. The sacred festival Lai Haraoba reenacts the creation myths of the Meitei gods, blending dance, music, and storytelling to honor ancestral spirits. Kangleipak’s court culture celebrated martial prowess through the ancient sport of Sagol Kangjei (polo), said to have been gifted by the gods, and artistic excellence through the delicate Ras Lila dance inspired by Vaishnavite traditions. Even after its integration into larger empires, the kingdom’s myths, epics, and rituals have continued to weave a sense of divine destiny into the identity of the Manipuri people." },
                     { imgs: ['images/KhongjomWar.jpg', 'images/KhongjomWar2.jpg', 'images/KhongjomWar3.jpg'], title: 'Anglo-Manipuri War (1891)', desc: "It remains one of the most defining and tragic episodes in the history of Kangleipak. Tensions rose when a succession dispute within the royal court attracted the attention of the British colonial administration. The crisis escalated after political maneuvers in the palace led to the arrest of British officers in Imphal, prompting the British Empire to launch a military expedition against the kingdom. The confrontation culminated in the historic 'Battle of Khongjom'.<br><br>Despite being a small state with limited resources, Manipur rallied under leaders such as Yuvraj (Crown Prince) Tikendrajit Singh, revered as the 'Lion of Manipur', and General Thangal Singh, a seasoned commander. Tikendrajit, known for his sharp strategic mind, organized defenses at key points such as Kangla Fort and coordinated resistance in the hills and valleys. Fierce battles erupted at Khongjom, where Major Paona Brajabashi and his troops fought to the last man, choosing death over surrender.<br><br>The British, equipped with modern rifles, artillery, and larger forces, eventually overpowered the Manipuri defenders. By April 1891, Imphal had fallen, and the British arrested the kingdom’s leaders. A public trial in Imphal condemned Tikendrajit, Thangal General, and several other patriots to death. On August 13, 1891, Tikendrajit and Thangal were executed at Polo Ground, an event now commemorated annually as Patriots’ Day.<br><br>Though the war ended with Manipur’s annexation and the curtailing of its sovereignty, it etched an unshakable legacy of valor in the Manipuri collective memory. The names of Tikendrajit, Paona Brajabashi, Thangal General, and countless unnamed warriors remain immortal in ballads, folk plays, and the hearts of the people, reminding each generation of the price of freedom." },
                     { imgs: ['images/ImphalWar.jpg', 'images/ImphalWar2.jpg', 'images/ImphalWar3.jpg'], title: 'The Battle of Imphal (1944)', desc: "The Battle of Imphal (March to July 1944) was a monumental clash in World War II that decisively halted the Japanese attempt to invade British India through the northeastern frontier. As the Japanese Fifteenth Army advanced into the dense jungles and rugged hills of Manipur, they faced fierce resistance from the Allied forces commanded by Lieutenant General William Slim. This battle became a grueling test of endurance, strategy, and determination, with both sides battling not only each other but also the harsh terrain and monsoon conditions.<br><br>Imphal, the capital of Manipur, became the focal point of this intense struggle. The rugged terrain of hills, dense jungles, and unpredictable monsoon weather created immense challenges for both sides. The local Manipuri people played a vital role, providing crucial intelligence, logistical support, and acting as guides through the difficult landscape. The battle involved not only brutal infantry clashes but also relentless air supply drops that kept the besieged Allied troops alive.<br><br>One of the fiercest engagements took place at Kanglatongbi and along the Tedim Road, where Japanese forces attempted to sever the communication lines and isolate the Allied garrison. Despite fierce assaults and near encirclement, the defenders held firm. The tide turned with effective air support and the failure of the Japanese supply lines, which were stretched thin in the hostile environment. Malnutrition, disease, and exhaustion ravaged the attacking Japanese troops, forcing a disastrous retreat.<br><br>The victory at Imphal, alongside the simultaneous Battle of Kohima, is often referred to as the Stalingrad of the East due to its decisive nature. It marked the first major defeat of the Japanese army on land during the war and shifted the momentum firmly in favor of the Allies in Southeast Asia. The battle also strengthened local morale and showcased the courage and resilience of Manipur’s people, whose land had become a pivotal battleground in the fight against imperial aggression.<br><br>Today, war memorials and museums in Manipur commemorate the valor of soldiers and civilians alike, preserving the memory of a battle that helped turn the tide of World War II." }
@@ -812,7 +827,7 @@
                     panel.className = `viewer-panel ${index === 0 ? 'active' : ''}`;
                     panel.dataset.index = index;
                     if (item.type === 'image') {
-                        panel.innerHTML = `<img src="${item.content}" alt="${item.label}" onerror="this.onerror=null; this.src='https://placehold.co/400x400/e2e8f0/94a3b8?text=Image+Not+Found';">`;
+                        panel.innerHTML = `<img src="${item.content}" alt="${item.label}" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e2e8f0/94a3b8?text=Image+Not+Found';">`;
                     } else if (item.type === 'map') {
                         panel.innerHTML = `<iframe src="${item.content}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
                     }
@@ -1062,6 +1077,4 @@
     </script>
 
 </body>
-
 </html>
-
